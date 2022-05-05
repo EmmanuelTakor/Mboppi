@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const bodyparser = require('body-parser')
 const dotenv = require('dotenv')
 const User = require('./models/user')
+const productRoutes = require('./routes/product')
 dotenv.config();
 
 mongoose.connect(process.env.DATABASE,error=>{

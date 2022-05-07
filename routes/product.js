@@ -22,6 +22,8 @@ router.post('/products', async (req,res)=>{
         res.status(500).json({
             success: false,
             message: err.message
+            console.log(err)
         })
     }
 })
+module.exports= router
